@@ -1,0 +1,15 @@
+{
+  "open_ai_key": "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",
+  "temperature": 0.1,
+  "language": "English",
+  "open_ai_chat_model": "gpt-3.5-turbo",
+  "use_stream": false,
+  "use_postgres": false,
+  "index_path": "./temp",
+  "postgres_url": "postgresql://localhost:5432/mydb",
+  "mode": "webui",
+  "api_port": 9531,
+  "api_host": "localhost",
+  "webui_port": 7860,
+  "webui_host": "0.0.0.0"
+}
