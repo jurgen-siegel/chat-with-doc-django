@@ -64,7 +64,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# Configurations from config.json
+# Configurations from config.example.json
 OPEN_AI_KEY = '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'.strip()
 OPEN_AI_PROXY = ''
 OPEN_AI_CHAT_MODEL = 'gpt-3.5-turbo'

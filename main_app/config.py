@@ -4,10 +4,10 @@ import os
 
 class Config:
     def __init__(self):
-        config_path = os.path.join(os.path.dirname(__file__), 'config.json')
+        config_path = os.path.join(os.path.dirname(__file__), 'config.example.json')
         if not os.path.exists(config_path):
-            raise FileNotFoundError(f'config.json not found at {config_path}, '
-                                    f'please copy config.example.json to config.json and modify it.')
+            raise FileNotFoundError(f'config.example.json not found at {config_path}, '
+                                    f'please copy config.example.json to config.example.json and modify it.')
         with open(config_path, 'r') as f:
             self.config = json.load(f)
             self.language = self.config.get('language')
